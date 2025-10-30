@@ -6,7 +6,7 @@ class Node {
   }
 }
 
-class Tree {
+export class Tree {
   constructor(array) {
     const sortedUniqueArray = [...new Set(array)].sort((a, b) => a - b);
     this.root = this.buildTree(sortedUniqueArray, 0, sortedUniqueArray.length - 1);
